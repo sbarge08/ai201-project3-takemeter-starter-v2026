@@ -51,25 +51,29 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. Overall accuracy
 
 <!-- Your criterion. It must name a number. -->
+The model should achieve an overall accuracy of at least 75% on the held-out test set.
 
 
 
 **Why this target:**
+I chose 75% because my classifier has only two labels, so a balanced random guess would be around 50%. Reaching 75% would show that the model learned a meaningful difference between `technical_help` and `learning_advice`.
 
 
 
 ---
 
-## 2.
+## 2. Per-label performance
 
 <!-- Your criterion. -->
+Both `technical_help` and `learning_advice` should achieve an F1 score of at least 0.70 on the held-out test set.
 
 
 
 **Why this target:**
+I chose 0.70 because I want the model to perform reasonably well on both categories instead of getting a good overall score by mainly predicting one label. The two labels can overlap in some advice-related posts, so I do not expect perfect performance.
 
 
 
@@ -78,10 +82,12 @@ whether you hit them:
 ## 3.
 
 <!-- Your criterion. -->
+Neither label should make up more than 60% of the full dataset.
 
 
 
 **Why this target:**
+I chose 60% because I want both labels to have enough examples for the model to learn from. A relatively balanced dataset should also make the overall accuracy more meaningful instead of allowing the model to rely on one dominant label.
 
 
 
@@ -90,10 +96,12 @@ whether you hit them:
 ## 4.
 
 <!-- Your criterion. -->
+When another person labels the same posts using my definitions and decision rule, we should agree on at least 85% of the posts.
 
 
 
 **Why this target:**
+I chose 85% because the difference between a specific technical problem and broader learning advice should usually be clear from my definitions. Some borderline posts may reasonably cause disagreement, so I did not require 100% agreement.
 
 
 
@@ -102,11 +110,12 @@ whether you hit them:
 ## 5.
 
 <!-- Your criterion. -->
+For predictions with a confidence score of at least 80%, at least 85% of those predictions should be correct.
 
 
 
 **Why this target:**
-
+I chose these numbers because a prediction that the model considers highly confident should be more reliable than an uncertain prediction. If confidence is useful, predictions above 80% confidence should usually be correct.
 
 
 ---
