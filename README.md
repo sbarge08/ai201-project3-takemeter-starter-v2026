@@ -38,6 +38,13 @@
 <!-- ═══════════════════════ UNIT 5 — THE BUILD ═══════════════════════ -->
 
 ## What This Does
+Community: r/learnprogramming
+
+Candidate distinctions:
+1. Posts that include specific code, an error message, or technical details vs. vague requests for help.
+2. Posts that explain a concrete learning or career goal and give context vs. posts asking broad questions with little context.
+3. Posts that provide specific resources, examples, or evidence vs. posts that mainly state an opinion.
+4. Posts that describe what the author has already tried vs. posts that ask for an answer without showing prior effort.
 
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
