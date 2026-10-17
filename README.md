@@ -61,34 +61,37 @@ Candidate distinctions:
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `technical_help`
 
 **Definition:**
-
+Requests help with a specific programming error, implementation, or technical concept.
 **Example 1:**
->
+> “ Can someone nullpointerexception to me in layman's terms?” — the author shows Java code producing a `NullPointerException` and asks why the error occurs.
+
 
 **Example 2:**
->
+>“Need some help figuring out how to fix the NullPointerException error in my code” — the author identifies the line causing the exception and asks for help understanding the problem.
 
-### `label_two`
+### `learning_advice`
 
 **Definition:**
+Requests guidance about learning programming, improving skills, or pursuing a programming career.
 
 **Example 1:**
->
+> “What Should I Learn Next?” — the author asks whether to continue building projects or move into a specialty such as machine learning.
 
 **Example 2:**
->
+> “New to programming” — the author explains that they are learning HTML/CSS and asks for advice on learning programming and getting a job in the field.
 
+<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
+     if the tone is heated." -->
 ### The hardest boundary
 
 **Which two labels:**
+`technical_help` and `learning_advice`
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
-
+If the author is trying to solve a specific coding problem, error, or implementation issue, I label it `technical_help`. If the author is asking what to learn, how to improve, or what direction to take in programming, I label it `learning_advice`.
 
 
 ---
