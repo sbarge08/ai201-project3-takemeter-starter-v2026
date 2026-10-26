@@ -40,14 +40,7 @@
 ## What This Does
 Community: r/learnprogramming
 
-Candidate distinctions:
-1. Posts that include specific code, an error message, or technical details vs. vague requests for help.
-2. Posts that explain a concrete learning or career goal and give context vs. posts asking broad questions with little context.
-3. Posts that provide specific resources, examples, or evidence vs. posts that mainly state an opinion.
-4. Posts that describe what the author has already tried vs. posts that ask for an answer without showing prior effort.
-
-<!-- Your community, and what your classifier sorts posts into. Three or four
-     sentences. -->
+This project classifies programming-discussion text collected for a dataset intended to represent r/learnprogramming. It distinguishes `technical_help` requests about a specific programming issue or concept from `learning_advice` requests about learning programming, improving skills, or career direction. The notebook fine-tunes DistilBERT on the 200-row labeled CSV and evaluates it on a held-out test split. In the saved seed-42 run, test accuracy was 83.3% and macro F1 was 0.833.
 
 
 
@@ -102,44 +95,46 @@ If the author is trying to solve a specific coding problem, error, or implementa
      cases. -->
 
 **Where the posts came from:**
+The dataset is described as posts from r/learnprogramming. The source audit could not verify any original Reddit submission, and the CSV contains no source URLs.
 
 **How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
+The CSV notes mark 20 records `cold` (the project convention for unaided labeling) and 180 `pre-labelled`. The audit records no posts as checked. The files do not identify who or what produced the pre-labels, or establish that I personally reviewed them, so I cannot claim that all labels were personally reviewed.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `technical_help` | 100 | 50% |
+| `learning_advice` | 100 | 50% |
+| **Total** | **200** | **100%** |
+
+**Source-text limitations:** The audit found no verified original post text or URLs. Records 1–40 contain substantial title-plus-body-like text, but completeness is unverified. Records 41–100 appear to be shortened excerpts, and records 101–200 are titles only; all 160 records from 41–200 are flagged incomplete pending source verification. The original bodies for title-only records are unknown.
 
 **Three hard cases**
 
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
+The dataset audit identified these ambiguous records from the available text. They are not documented as my personal adjudications, and the incomplete source text could change the interpretation.
 
 **1.**
-> *The post:*
+> *Available text (record 70):* “How to understand regex — Hi i want to learn how to use regex because it's so powerful and useful”
 >
-> *Could have been:*
+> *Current label:* `technical_help`
 >
-> *I chose, because:*
+> *Plausible alternative:* `learning_advice`, if the full post is mainly asking how to study regex or for learning resources.
 
 **2.**
-> *The post:*
+> *Available text (record 82):* “How can I learn about Promises, Async, Await...etc in JavaScript? — I learned JavaScript last year but I didnt use it often and now I have to work with it.”
 >
-> *Could have been:*
+> *Current label:* `technical_help`
 >
-> *I chose, because:*
+> *Plausible alternative:* `learning_advice`, if the complete post asks chiefly for a learning plan or resources rather than an explanation of these concepts.
 
 **3.**
-> *The post:*
+> *Available text (record 88):* “Best way to learn resolving git conflicts? — Hi all. I’ve been using git for quite some time, but never got to level beyond simple push and pull.”
 >
-> *Could have been:*
+> *Current label:* `technical_help`
 >
-> *I chose, because:*
+> *Plausible alternative:* `learning_advice`; the available text asks for the best way to learn conflict resolution. The audit recommends reconsidering this label after verifying the complete post.
 
 ---
 
@@ -147,15 +142,18 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:** 3 epochs; learning rate `2e-5`; batch size 16; maximum length 128 tokens; seed 42. Device: CPU (`torch 2.14.1+cpu`).
 
-**Anything I changed from the defaults, and why:**
+**Anything I changed from the defaults, and why:** No training hyperparameters were changed from the notebook settings.
 
 **Split sizes:** <!-- train / val / test, and per-label counts in the test
 split. If a label had fewer than about 8 in test, say so — it explains a lot
 of next unit's variance. -->
+Train 139 / validation 31 / test 30. The test split contains 15 `technical_help` and 15 `learning_advice` records.
+
+**Saved seed-42 test results:** accuracy **0.833**; macro F1 **0.833**; `technical_help` F1 **0.828** (15 records); `learning_advice` F1 **0.839** (15 records). The notebook's training and results cells completed, and the results cell reported writing `results.json` and `test_split.csv`.
 
 
 
@@ -172,17 +170,18 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Check whether `labels.csv` existed and, if missing, create it from the template and validate its shape.
+- *What came back:* Copilot confirmed it was missing and that the template had 200 data rows with `text`, `label`, and `note` columns.
+- *What I changed:* Copilot copied the template to `labels.csv`; the copy was verified byte-identical. No label values were edited.
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Check the notebook's configured classification labels against my two labels.
+- *What came back:* Copilot found the starter `analysis`, `hot_take`, and `reaction` configuration.
+- *What I changed:* Copilot replaced only the notebook `LABELS` list with `technical_help` and `learning_advice`; no training code or results were changed.
 
 **Pre-labelling disclosure:**
+The CSV marks 180 records `pre-labelled`, but the project files do not say whether AI produced those labels or whether they were individually reviewed. That provenance and review status remain unknown; I do not claim that those labels were personally checked.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
