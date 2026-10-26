@@ -1,0 +1,178 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.9333333333333333,
+    "f1_macro": 0.9333333333333333,
+    "per_label": {
+      "learning_advice": {
+        "precision": 0.9333333333333333,
+        "recall": 0.9333333333333333,
+        "f1": 0.9333333333333333,
+        "support": 15
+      },
+      "technical_help": {
+        "precision": 0.9333333333333333,
+        "recall": 0.9333333333333333,
+        "f1": 0.9333333333333333,
+        "support": 15
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "How do you start from scratch?",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "How is it possible for a C program to segmentation fault? \u2014 Just got done with an OS course and I want to start writing some low level personal projects.",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "What is a good step by step approach when learning to code? \u2014 I\u2019ve been trying to code for 2 years and I just don\u2019t understand how to do it. I started first by watching YouTube tutorials, Codecademy, W3 Schools and udemy, but I can\u2019t understand and can\u2019t do anything on my own. What would be a good approach to understand and become better at coding?",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "How would you explain left-join and right-join to a 5 year old? \u2014 I have worked with SQL in the past and wrote really really long queries",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "Code Review \u2014 Hello r/learnprogramming ! I recently started learning about the PyGame framework and I made this project. I would really appreciate some honest code reviews/feedback because I want to learn how to improve and write better code. In the comments feel free to point out my mistakes or criticize my code! Thanks!",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "Getting Started With Git",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "Explain promises in javascript to me like I\u2019m a 5 year old. \u2014 Having a hard time understanding how promises work with then, catch and finally.",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "Searched answer for this question far and wide. Didn't find the answer. Python \u2014 This example code: while 1: if keyboard.is_pressed('ctrl+alt'): print('to') But when I press alt+ctrl it prints to. Tried using: while 1: if keyboard.is_pressed('ctrl+alt') and not keyboard.is_pressed('alt+ctrl') : print('to') But doesn't work the print statement gets executed even when I press alt+ctrl. The reason I want it be this way because I want to assign function to each combination so \"ctrl+alt\" Have one func assigned to it and \"alt + ctrl\" Have another seperate func assigned to it and I don't want to mix it up. I want it to print to only when I press ctrl+alt and not alt+ctrl or any other key. How to do this. More specifically I want it to recognise it only when I hold down ctrl then press alt while still holding down ctrl. I am using python and sockets and I am making a remote keyboard where the server presses a key and in the client pc it automatically presses. So I want the exact combination because keyboard shortcuts(ctrl+c, ctrl+shift+esc, alt+f4, ctrl+shift+f10, windows+alt+d)only work when pressed in the right order that's why I need it in the exact order Operating System: windows 7 Python Version: 3.8.8 Keyboard: Logitech k200 IDE: pycharm community edition Module: keyboard module latest version Module Link: URL Pip Version: Latest",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "Segmentation fault in C++ program - no idea why \u2014 Hello everyone!! I'm learning C++ through learncpp.com",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "Help with IBM Flask app KeyError",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "Go to school or self teach?",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "How do I start contributing to Open Source?",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "How do I learn recursion?? \u2014 Hello people! I wouldn't consider myself a beginner at coding... I can manage some topics, but when it comes to recursion, I struggle. It is just not possible for me to even visualize it in the first place. I try start with a very simple base case, and then try to extend logic, but nope, i somehow always fail... how do i solve recursion? Because of this, even DP also i cant manage!",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "Help how to apply for internships",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "Should I learn Python First? \u2014 I'll try to make it short. I began to wonder whether or not should I learn python before trying to learn Java or should I go directly to learning Java. I am a total newbie... nah not even a newbie, even before that. Recommendations and advice will be greatly appreciated.\r\n\r\nEdit: thanks, I'm gonna just right into Java as several have recommended. Also it seems I have forgot to write my motivation, it's learning to mod minecraft, cause if other people don't do it right I will just do it myself.",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "Java: Is Arraylist better than Arrays?",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "Confusion on GROUP BY statement and its use",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "(Python 3) Need some help figuring out .json() error message",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "Should I learn Java or stick to Python? \u2014 I have been studying programming for the last six months. For the first four months I studied Python, and then I started studying studying data structures and algorithms. For data structures and algorithms, I picked the books where the code was written in Python. Now that I am about to finish that, I have decided to pick Algorithms by Robert Sedgewick. In this book all the code is written in Java.\r\n\r\nI want to learn both Java and Python, and I will learn Java at some point. My question is whether I should start learning it right now or not? I know it's not necessary, but I think it will be much easier to follow the book if I have some understanding of Java.\r\n\r\nWhy am I confused?\r\n\r\nWell, I have watched videos, read blogs about people recommending to stick to one language when starting out. So, I am scared to start a new language thinking I might forget Python or get into a situation where I don't understand either of these languages.",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "Help me start my dsa journey",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "How do pointers work and why do they have so many usages? \u2014 Is the asterisk sign * both used for getting the value of the variable it points to and for creating a pointer? And when typing int *a = &b; for instance, a now holds the memory address of b. How does it then also know its value when saying int c = *a; ? And why do you use them in the first place? In high level languages you just type int b = 5; int a = b; int c = a; why is it more complicated in c++?",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "where do I learn DSA from?(python)",
+      "gold": "learning_advice",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "C Program is compiling online but not on Visual studio \u2014 Hi i am new to programming. So i got this code from a book. #include <stdio.h> int main() { int i, n; int marks[n]; int sum = 0; printf(\"Enter number of students: \"); scanf(\"%d\", &n); for (i = 0; i < n; i++) { printf(\"Enter marks of student%d: \", i + 1); scanf(\"%d\", &marks[i]); //saving the marks in array sum += marks[i]; } printf(\"Sum of marks = %d\", sum); return 0; } It is getting compiled online but not on VS code or VS. i have MingW and everything and a lot of other codes are getting compiled but not this one, please help",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "Best way to learn resolving git conflicts? \u2014 Hi all. I\u2019ve been using git for quite some time, but never got to level beyond simple push and pull.",
+      "gold": "technical_help",
+      "predicted": "technical_help"
+    },
+    {
+      "text": "Recommended things to learn for test-scripting?",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "should I take a year or two of self learning before doing a online or in-person bootcamp?",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "Any practical Backend web development roadmap?",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "CSS Help - First Time Programmer",
+      "gold": "technical_help",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "What should i lern next \u2014 im currently a begginer and learning python but when im confortable with it what should i learn next? im asking this so early because when im confortable with python i don't want to just hang on a spot and not move forward im really interested in learning c++ or javascript but maybe i should learn R or rust? im interested in app/game development i always wanted to make a game that i thought is cool but i never knew how to programm. so please give some suggestions.",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    },
+    {
+      "text": "Beginner - Python vs Java \u2014 I am currently trying to learn coding from scratch in the few months that I have before I do computer science as a course in my high school. This course focuses more on Java. I have been recommended by peers to focus on learning Java and then Python, due to Java teaching more syntax and how if I start with python I may struggle to deal with Java's heavier use of it. Is this true? Additionally, would it be possible for me to learn Java and Python within this time frame? I will probably have around two-three hours to work on it every single day.\r\n\r\nLastly, should I learn a different language rather than python?",
+      "gold": "learning_advice",
+      "predicted": "learning_advice"
+    }
+  ]
+}
