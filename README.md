@@ -1,5 +1,6 @@
 # TakeMeter
 
+
 > ### 👋 Start here
 >
 > **New to this repo? Read [RUNNING.md](RUNNING.md) first** — setup, the
@@ -23,19 +24,9 @@
 
 ---
 
-<!-- ─────────────────────────────────────────────────────────────────────────
-     HOW TO USE THIS FILE
 
-     Unit 5 asks for the first five sections. Unit 6 adds the five below them.
 
-     Everything is pasted as TEXT. No screenshots, no images.
 
-     ⚠️ The confusion matrix especially. The notebook prints one as a markdown
-     table, ready to copy. A screenshot of a matrix earns nothing. Paste the
-     table.
-     ───────────────────────────────────────────────────────────────────────── -->
-
-<!-- ═══════════════════════ UNIT 5 — THE BUILD ═══════════════════════ -->
 
 ## What This Does
 Community: r/learnprogramming
@@ -48,11 +39,7 @@ This project classifies programming-discussion text collected for a dataset inte
 
 ## Label Taxonomy
 
-<!-- Each label: a one-sentence definition and two real examples from your
-     reading. Then your decision rule for the hardest boundary.
 
-     The decision rule is worth a point on its own and it's the thing most
-     people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
 ### `technical_help`
 
@@ -76,8 +63,7 @@ Requests guidance about learning programming, improving skills, or pursuing a pr
 **Example 2:**
 > “New to programming” — the author explains that they are learning HTML/CSS and asks for advice on learning programming and getting a job in the field.
 
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+
 ### The hardest boundary
 
 **Which two labels:**
@@ -91,15 +77,12 @@ If the author is trying to solve a specific coding problem, error, or implementa
 
 ## The Dataset
 
-<!-- Where you collected from, how you labelled, your counts, and three hard
-     cases. -->
+
 
 **Where the posts came from:**
 The dataset is described as posts from r/learnprogramming. The source audit could not verify any original Reddit submission, and the CSV contains no source URLs.
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
-The CSV notes mark 20 records `cold` (the project convention for unaided labeling) and 180 `pre-labelled`. The audit records no posts as checked. The files do not identify who or what produced the pre-labels, or establish that I personally reviewed them, so I cannot claim that all labels were personally reviewed.
+**How I labelled them:** 20 records were cold-labelled and 180 were AI-prelabelled. The project does not document which, if any, of the AI-prelabelled records I personally reviewed. I do not claim all AI-prelabelled labels or source text were independently verified.
 
 **Counts per label:**
 
@@ -109,11 +92,10 @@ The CSV notes mark 20 records `cold` (the project convention for unaided labelin
 | `learning_advice` | 100 | 50% |
 | **Total** | **200** | **100%** |
 
-**Source-text limitations:** The audit found no verified original post text or URLs. Records 1–40 contain substantial title-plus-body-like text, but completeness is unverified. Records 41–100 appear to be shortened excerpts, and records 101–200 are titles only; all 160 records from 41–200 are flagged incomplete pending source verification. The original bodies for title-only records are unknown.
+**Source-text limitations:** Checking the actual `labels.csv`, 98 of records 1–100 contain the visible ` — ` title/body separator and 2 do not. Records 101–200 have no such separator and appear title-only in the CSV. This text pattern does not verify original post completeness: no original posts or URLs were verified, so the number of genuinely incomplete original posts cannot be reliably determined.
 
 **Three hard cases**
-
-The dataset audit identified these ambiguous records from the available text. They are not documented as my personal adjudications, and the incomplete source text could change the interpretation.
+The following are ambiguous in the available text; missing or shortened original text could change their interpretation.
 
 **1.**
 > *Available text (record 70):* “How to understand regex — Hi i want to learn how to use regex because it's so powerful and useful”
@@ -140,7 +122,7 @@ The dataset audit identified these ambiguous records from the available text. Th
 
 ## The Training Run
 
-<!-- Your starting model, your settings, and anything you changed and why. -->
+
 
 **Base model:** `distilbert-base-uncased`
 
@@ -148,9 +130,7 @@ The dataset audit identified these ambiguous records from the available text. Th
 
 **Anything I changed from the defaults, and why:** No training hyperparameters were changed from the notebook settings.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+**Split sizes:** 
 Train 139 / validation 31 / test 30. The test split contains 15 `technical_help` and 15 `learning_advice` records.
 
 **Saved seed-42 test results:** accuracy **0.833**; macro F1 **0.833**; `technical_help` F1 **0.828** (15 records); `learning_advice` F1 **0.839** (15 records). The notebook's training and results cells completed, and the results cell reported writing `results.json` and `test_split.csv`.
@@ -161,12 +141,7 @@ Train 139 / validation 31 / test 30. The test split contains 15 `technical_help`
 
 ## How I Used AI
 
-<!-- Two specific moments — what you asked, what came back, what you changed.
 
-     ⚠️ Plus disclosure of any pre-labelling. If you had a model pre-label a
-     batch and then read and corrected every one, say that. It's an allowed
-     workflow and disclosing it costs you nothing. Not disclosing it is the
-     problem. -->
 
 **Moment 1**
 
@@ -181,34 +156,32 @@ Train 139 / validation 31 / test 30. The test split contains 15 `technical_help`
 - *What I changed:* Copilot replaced only the notebook `LABELS` list with `technical_help` and `learning_advice`; no training code or results were changed.
 
 **Pre-labelling disclosure:**
-The CSV marks 180 records `pre-labelled`, but the project files do not say whether AI produced those labels or whether they were individually reviewed. That provenance and review status remain unknown; I do not claim that those labels were personally checked.
+Twenty records were cold-labelled and 180 were AI-prelabelled. The project does not document how many of the 180 AI-prelabelled records I personally reviewed, so I cannot claim that all their labels or source text were independently verified.
 
-<!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
+**ChatGPT:** Provided dataset-recovery instructions, helped plan the project, interpreted model-evaluation results, and drafted proposed staff-label adjudications. I personally reviewed and approved the four category-(a) decisions above.
 
-     Don't fill these in during unit 5.
-     ═══════════════════════════════════════════════════════════════════ -->
+**VS Code Copilot:** Assisted with file editing, validation, running experiments, and writing this report. It also checked that my 30 staff labels matched the source posts without altering my annotations.
+
+
 
 ---
 
 ## Baseline vs. Trained
 
-<!-- Both models on the same posts. `python baseline.py --trained results.json`
-     prints this table for you. -->
+
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.933 | 0.833 | -0.100 |
+| Macro F1 | 0.933 | 0.833 | -0.100 |
+| F1 — `learning_advice` | 0.933 | 0.839 | -0.095 |
+| F1 — `technical_help` | 0.933 | 0.828 | -0.106 |
 
 **What I predicted before I looked:**
-<!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
-     prediction made afterwards isn't one. -->
+No prediction was recorded before the baseline was run, so I cannot report a before-the-run prediction.
 
 **What the gap actually means:**
-<!-- If the baseline matched your trained model, your fine-tuning added
-     nothing — and that is a real finding, not a failure. Say it plainly. -->
+On these 30 held-out posts, the zero-shot baseline scored 10 percentage points higher in accuracy and macro F1 than the fine-tuned model. Fine-tuning did not improve these measured scores; this result is limited to this single seed-42 split.
 
 
 
@@ -216,32 +189,37 @@ The CSV marks 180 records `pre-labelled`, but the project files do not say wheth
 
 ## Run Log — Before
 
-<!-- Five criteria across three seeds. The notebook's section 6 prints the
-     spread table; the Target and Verdict columns are yours. -->
+
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Accuracy | >=75% | 0.833 | 0.800 | 0.867 | MET |
+| 2. Both label F1 | >=0.70 each | tech 0.828; advice 0.839 | tech 0.750; advice 0.833 | tech 0.882; advice 0.846 | MET |
+| 3. Dataset balance | Neither >60% | 50% / 50% | 50% / 50% | 50% / 50% | MET |
+| 4. Own-taxonomy agreement | >=85% | Not measured | Not measured | Not measured | NOT MEASURABLE |
+| 5. Accuracy at confidence >=80% | >=85% | Not available | Not available | Not available | NOT MEASURABLE |
+
+**Model metrics by seed**
+
+| Seed | Test accuracy | Macro F1 | `technical_help` F1 | `learning_advice` F1 |
+|---|---:|---:|---:|---:|
+| 42 | 0.833 | 0.833 | 0.828 | 0.839 |
+| 7 | 0.800 | 0.792 | 0.750 | 0.833 |
+| 2024 | 0.867 | 0.864 | 0.882 | 0.846 |
+
+Criterion 4 requires another person to label the same posts under my own taxonomy; there is no such comparison. The staff-agreement exercise uses a different taxonomy and cannot substitute. Criterion 5 requires the accuracy of predictions whose confidence is at least 80%; the saved results report accuracy for the most-confident third, not the exact 80%-confidence subset, so I cannot determine this verdict.
 
 ### Confusion matrix
 
-<!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
-     An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
-|---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+
+| true \\ predicted | `technical_help` | `learning_advice` |
+|---|---:|---:|
+| `technical_help` | 12 | 3 |
+| `learning_advice` | 2 | 13 |
 
 **My biggest off-diagonal number, and what it means:**
-<!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
-     direction. "7 real analysis posts were called hot_take and only 3 went the
-     other way" is a direction, not just an error rate. -->
+The largest off-diagonal is 3 true `technical_help` posts predicted as `learning_advice`; the reverse direction has 2. The errors are roughly symmetric, and the notebook describes this label boundary as difficult in both directions. This is only the seed-42 split.
 
 
 
@@ -249,27 +227,18 @@ The CSV marks 180 records `pre-labelled`, but the project files do not say wheth
 
 ## Verdicts and Diagnoses
 
-<!-- MET or MISSED against LAST UNIT's target. The target has to hold across
-     all three seeds, not turn up sometimes. -->
+
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Overall accuracy | >=75% | MET | 0.800–0.867 across seeds 42, 7, and 2024; all exceed 0.75. |
+| 2 | Both label F1 | >=0.70 each | MET | Lowest per-label F1 is 0.750 (`technical_help`, seed 7); all six label/seed scores exceed 0.70. |
+| 3 | Dataset balance | Neither label >60% | MET | Full labels.csv has 100/200 (50%) for each label. |
+| 4 | Own-taxonomy agreement | >=85% | NOT MEASURABLE | No independent second annotation under my taxonomy is available. |
+| 5 | Accuracy at confidence >=80% | >=85% | NOT MEASURABLE | The saved per-seed summaries do not report the exact >=80% confidence subset and its accuracy. |
 
 **Diagnoses**
-
-<!-- For each miss: the cause, and how you know. The four common causes are:
-     too few examples for a label, a boundary you applied inconsistently, a
-     genuinely hard label pair, and a task the model can't reach from this
-     much data.
-
-     ⚠️ Use your agreement report as evidence. It is the only instrument you
-     have that can tell a LABELLING problem from a MODEL problem, and this
-     section is graded on whether you used it that way. -->
+No measured performance or balance criterion was missed. Criteria 4 and 5 remain unmeasurable for the evidence gaps above; I do not infer them from staff-taxonomy results or the confidence-third summary.
 
 
 
@@ -277,53 +246,72 @@ The CSV marks 180 records `pre-labelled`, but the project files do not say wheth
 
 ## Agreement Report
 
-<!-- Your rate against the staff set, and every disagreement adjudicated.
 
-     Remember you labelled these 30 under the STAFF taxonomy in
-     data/staff_taxonomy.md, not your own — so every argument below is made
-     from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 26 / 30 = 86.7% (26 agreed, 4 disagreed).
+The report compared all 30 posts; there were no unmatched staff posts. The exact disagreements and labels below are taken from `agreement_results.json`.
 
-<!-- Nobody grades this number. A 60% who argues every disagreement from the
-     stated rules beats a 95% who wrote "staff was right" nine times. Several
-     of the 30 were chosen because they're genuinely ambiguous — you should be
-     winning some of these. -->
+
 
 **Disagreements**
+The rule notes below apply the staff taxonomy. I reviewed and approved each adjudication and classified all four as category (a).
 
-<!-- Three lines each: the post, both labels, and who you think is right and
-     why — grounded in the staff definitions you were both applying.
 
-     Then sort each into one of three piles:
-       (a) the rule covered it and I applied it loosely → a consistency problem
-       (b) the rule genuinely doesn't say               → a gap in the definitions
-       (c) the rule is ambiguous here and my reading is defensible → argue it.
-           This is a legitimate win.
 
-     Pile (a) is the one that matters most for your diagnosis: if you applied a
-     written rule two different ways on 30 posts, that is direct evidence about
-     what you did across your own 200. -->
+**Adjudication categories:**
+- **(a) Consistency problem:** The written rule covered the case, but I applied it loosely.
+- **(b) Definition gap:** The written rule does not settle the case.
+- **(c) Defensible ambiguity:** The rule leaves room for my interpretation, which I can argue from the text.
 
-**1.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
+**1. Sleep and session quality**
 
-**2.**
-> *The post:*
+> *Exact post:* I tracked sleep against session quality for eleven weeks. Under seven hours the next day's intervals were 6-8 seconds per mile slower, every time bar one. Small sample, one runner, but it's consistent enough that I've stopped scheduling hard days after late shifts.
 >
-> *Staff said / I said:*
+> *My label:* `reaction`; *Staff label:* `analysis`.
 >
-> *My call, and why:*
+> *Relevant rule:* Staff rule 3 says recency or personal experience does not override a load-bearing checkable fact. The eleven-week comparison and 6-8 seconds-per-mile difference support the author's scheduling conclusion, matching the staff definition of `analysis`.
 >
-> *Which pile:*
+> *My adjudication:* Staff's analysis is stronger.
+> *My category:* (a) — I applied the existing decision rule too loosely.
+> *Reason:* The eleven weeks of observations and 6–8-second pace difference support the author's decision about scheduling hard workouts. I had focused on the first-person narrative instead of the evidence supporting the conclusion.
 
-**What the pattern in my disagreements tells me:**
+**2. Carbon plates and mileage**
+
+> *Exact post:* Carbon plates aren't the whole story. My times dropped 2% in the shoes and another 2% the following year in the same pair, when the only thing that changed was going from 35 to 50 miles a week.
+>
+> *My label:* `reaction`; *Staff label:* `analysis`.
+>
+> *Relevant rule:* Staff rule 1 asks whether the checkable fact carries the argument. The two 2% comparisons and the mileage change support the claim that shoes were not the whole explanation; first-person wording alone does not make this a `reaction` under rule 3.
+>
+> *My adjudication:* Staff's analysis is stronger.
+> *My category:* (a) — I applied the existing decision rule too loosely.
+> *Reason:* The two 2% improvements and the mileage change from 35 to 50 miles per week provide evidence that shoes alone do not explain the improvement. This is an argument based on measurements rather than simply an account of an experience.
+
+**3. Temperature and running pace**
+
+> *Exact post:* Ran the same loop in 4C and in 24C within a fortnight, same effort by heart rate. 90 seconds slower in the heat over six miles. People keep saying heat costs you 'a bit' and it's more than that.
+>
+> *My label:* `reaction`; *Staff label:* `analysis`.
+>
+> *Relevant rule:* Staff rule 3 says personal experience is still `analysis` when it argues from checkable evidence. The same-loop, same-effort comparison and 90-second difference support the claim about heat.
+>
+> *My adjudication:* Staff's analysis is stronger.
+> *My category:* (a) — I applied the existing decision rule too loosely.
+> *Reason:* The author compares the same route at two temperatures, describes controlling effort using heart rate, and uses the 90-second difference to support a broader claim about the effect of heat.
+
+**4. Shoe comparison**
+
+> *Exact post:* Three of us ran the same session on the same day, different shoes, within 10 seconds of each other over 5 miles. I'm not saying shoes do nothing, but whatever they do was smaller than the noise between three people.
+>
+> *My label:* `reaction`; *Staff label:* `analysis`.
+>
+> *Relevant rule:* Staff rules 1 and 3 distinguish an argument supported by a checkable fact from a personal reaction. The same-session comparison and 10-second range are the evidence supporting the claim about shoe effects.
+>
+> *My adjudication:* Staff's analysis is stronger.
+> *My category:* (a) — I applied the existing decision rule too loosely.
+> *Reason:* The comparison of three runners finishing within 10 seconds is used to support a limited conclusion about shoe effects versus observed variation. The small sample weakens the generalizability but does not turn the post into an immediate emotional reaction.
+
+**What the pattern in my disagreements tells me:** In all four cases, I focused on the first-person experience and overlooked that quantitative evidence supported an argument. I therefore applied the `reaction` label too loosely instead of using the staff `analysis` rule.
 
 
 
@@ -331,24 +319,31 @@ The CSV marks 180 records `pre-labelled`, but the project files do not say wheth
 
 ## The Improvement
 
-**What I changed:**
+**What I changed:** Reduced training epochs from 3 to 2; learning rate, batch size, max length, labels, data, split procedure, and seeds stayed unchanged. The hypothesis was that fewer epochs might improve generalization; overfitting had not been established.
 
-**Which diagnosis pointed at it:**
+**Which diagnosis pointed at it:** The original three-seed results varied by seed, and the zero-shot baseline outperformed the original fine-tuned model on seed 42. Those observations motivated a test, but they do not prove overfitting.
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Accuracy | >=75% | 0.833 | 0.600 | 0.833 | MISSED |
+| 2. Both label F1 | >=0.70 each | tech 0.839; advice 0.828 | tech 0.333; advice 0.714 | tech 0.857; advice 0.800 | MISSED |
+| 3. Dataset balance | Neither >60% | 50% / 50% | 50% / 50% | 50% / 50% | MET |
+| 4. Own-taxonomy agreement | >=85% | Not measured | Not measured | Not measured | NOT MEASURABLE |
+| 5. Accuracy at confidence >=80% | >=85% | Not available | Not available | Not available | NOT MEASURABLE |
 
-**Did it help, and how do I know:**
+**After-run metrics**
 
-<!-- If it didn't, say so. Relabelling that didn't help is a genuinely
-     interesting result and earns full credit. -->
+| Seed | Accuracy | Macro F1 | `technical_help` F1 | `learning_advice` F1 |
+|---:|---:|---:|---:|---:|
+| 42 | 0.833 | 0.833 | 0.839 | 0.828 |
+| 7 | 0.600 | 0.524 | 0.333 | 0.714 |
+| 2024 | 0.833 | 0.829 | 0.857 | 0.800 |
+
+**Did it help, and how do I know:** No. Mean accuracy fell from 0.833 to 0.756 and mean macro F1 fell from 0.830 to 0.729. Seed 42's accuracy and macro F1 were unchanged; seeds 7 and 2024 both declined. The baseline also outperformed the original fine-tuned model on seed 42: 0.933 vs. 0.833 accuracy and macro F1.
+
+
 
 
 
@@ -356,49 +351,21 @@ The CSV marks 180 records `pre-labelled`, but the project files do not say wheth
 
 ## What's Still Broken
 
-<!-- For each criterion still missed: what you'd do, and why you stopped. -->
+The two-epoch run missed the 75% accuracy target on seed 7 (0.600) and the per-label F1 target because `technical_help` F1 was 0.333 on seed 7. The same change did not improve the three-seed averages; I am not treating this as proof that three epochs overfit.
+
+Criterion 4 remains unmeasurable because it requires a second person to label the same posts under my own taxonomy. The staff set uses a different taxonomy. Criterion 5 remains unmeasurable because prediction-level confidence values and correctness flags were not saved, so the exact >=80% subset cannot be reconstructed.
+
+The dataset audit also flags posts 41–200 as incomplete or title-only and could not verify original source posts. That limits confidence in both the model scores and label quality; I have not changed any dataset labels.
 
 
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
-<!-- Two sentences. Your confusion matrix is the evidence. -->
+The seed-42 before matrix shows a near-balanced error in both directions (3 `technical_help` predicted as `learning_advice`, 2 in reverse), while the after matrices vary substantially by seed: seed 7 sends 12 technical-help posts to learning-advice, but seed 2024 sends 5 learning-advice posts to technical-help. The changing direction suggests instability across these small test splits; incomplete source text also limits any stronger conclusion about the boundary.
 
 
 
-<!-- ═════════════════════════════════════════════════════════════════════
 
-     SUBMISSION CHECKLIST — unit 5
-
-       [ ] criteria.md has five numbered criteria, each naming a NUMBER
-       [ ] Each has a reason underneath tied to your data or taxonomy
-       [ ] labels.csv: at least 150 rows, text/label/note, ONE file not split
-       [ ] No label above 70%
-       [ ] All five unit 5 sections have real content
-       [ ] Label Taxonomy includes the decision rule for your hardest boundary
-       [ ] The Dataset includes three hard cases
-       [ ] results.json and test_split.csv committed (the notebook does this)
-       [ ] At least four new commits
-       [ ] Repository URL submitted — WRITE IT DOWN
-
-     SUBMISSION CHECKLIST — unit 6
-
-       [ ] Baseline vs. Trained table, with your prediction written beforehand
-       [ ] Run Log — Before, five criteria across three seeds
-       [ ] Confusion matrix TYPED AS A MARKDOWN TABLE
-       [ ] A verdict on every criterion
-       [ ] A diagnosis for every miss, using the agreement report as evidence
-       [ ] Agreement Report with every disagreement adjudicated
-       [ ] One improvement, with Run Log — After
-       [ ] What's Still Broken
-       [ ] results_three_seeds_before.json, results_three_seeds_after.json,
-           baseline_results.json and
-           agreement_results.json committed
-       [ ] At least four new commits
-       [ ] The SAME repository URL as last unit
-
-     Do not delete and recreate this repository.
-     ═════════════════════════════════════════════════════════════════════ -->
 
 ---
 
