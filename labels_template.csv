@@ -1,3 +1,237 @@
 text,label,note
-Paste one post here. Keep the whole post — don't trim it to fit.,your_label_here,cold
-Another post.,your_label_here,"pre-labelled, checked"
+"What Should I Learn Next? — After learning the syntax, object oriented programming, data structures & algorithms, and libraries, what should I learn? Should I just keep doing projects? Or should I move into a more niche skillset like ML?",learning_advice,cold
+"First time C++ — Hello learning C++ and this error won't go. Please help. I don't know what to do. I am trying to run a simple code which is ""My name is Aliyan"" [Running] cd ""c:\Users\Hanzallah\Documents\"" && g++ Class1.cpp -o Class1 && ""c:\Users\Hanzallah\Documents\""Class1 c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16' collect2.exe: error: ld returned 1 exit status [Done] exited with code=1 in 0.33 seconds",technical_help,cold
+"Places to start? — Short of school, what are some good places to start learning? I don't really even know what to ask, because I'm unfamiliar with the concept to the point that I'm in the ""I don't know what I don't know,"" zone. I asked Copilot to organize a roadmap for learning programming languages to build a program I'd like to use at home and for personal use to organize my life. I'd like to add a new set of skills to my skill set for personal enjoyment as well. Copilot suggested a book, C#12 and .NET 8 by Mark Price. Is this a good direction to start?",learning_advice,cold
+"Beginner, need help! Thank you. — So I wrote this code and it's giving an error. Been looking for solution for more than 30min and thought I should ask it here.. #include<stdio.h> Int main() { string answer = get_string(""what's your name? ""); printf(""hello, %s\n"", answer); } Error: hello.c: In function 'main': hello.c:7:5 error: unknown type name 'string' string answer = get_string(""what's your name? ""); hello.c:7:21: warning: implicit declaration of function 'get_string' [-Wimplicit-function-declaration] string answer = get_string(""what's your name? ""); Please help me resolve this. Edit: issue hasn't been solved",technical_help,cold
+"What is a good step by step approach when learning to code? — I’ve been trying to code for 2 years and I just don’t understand how to do it. I started first by watching YouTube tutorials, Codecademy, W3 Schools and udemy, but I can’t understand and can’t do anything on my own. What would be a good approach to understand and become better at coding?",learning_advice,cold
+"Help with debugging newbie Javascript — Hello! My javascript code is really basic but the i'm getting an undefined error along with the correct answer. Here's the assignment: Create a function gradeCalculatorwhich takes a grade(number) and console.logsits letter grade. grades 90 and above should return ""A"" grades 80 to 89 should return ""B"" grades 70 to 79 should return ""C"" grades 60 to 69 should return ""D"" 59 and below should return ""F"" Here's my proposed solution: function gradeCalculator(grade) { if (grade < 60){console.log(""F""); } else if (grade < 70) {console.log(""D""); } else if (grade < 80) {console.log(""C""); } else if (grade < 90) {console.log(""B""); } else if (grade < 100) {console.log(""A""); } } //Uncomment the lines below to test your code console.log(gradeCalculator(92)); //=> ""A"" //console.log(gradeCalculator(85)); //=> ""B"" //console.log(gradeCalculator(70)); //=> ""C"" //console.log(gradeCalculator(61)); //=> ""D""",technical_help,cold
+"I want to change my life — I'm not happy where I am in life right now. I'm looking for a career change. I feel completely lost and I want to try anything. Can I change my life by learning to code? Has anyone been self taught and was able to get a job? If I took a program, what kind do I start with? If I want to do this for a career, where do I begin? I feel lost and overwhelmed. Thank you to anyone who spares time to help.",learning_advice,cold
+"Trouble with CodingBat exercise — Hi r/learnprogramming, I'm currently learning Python and have gotten to the point where I am taking on very basic CodingBat warmup exercises. I'm doing this exercise now, but can't figure out why my code isn't working properly. Here's the exercise: Given 2 int values, return True if one is negative and one is positive. Except if the parameter ""negative"" is True, then return True only if both are negative. pos_neg(1, -1, False) → True pos_neg(-1, 1, False) → True pos_neg(-4, -5, True) → True Here's my code: def pos_neg(a, b, negative): if negative == True and (a < 0 and b < 0): return True elif negative == False and (a < 0 and b > 0) or (a > 0 and b < 0): return True else: return False And yet, the solution is telling me that my code works for all but one set of arguments, which is (1, -1, True). Can anybody explain to me why my code doesn't work with this set of arguments? Maybe it's something painfully obvious and I'll feel dumb once I get the answer but I'd like to understand why. Thank you! EDIT: The formatting didn't copy properly so I just cleaned it up. I assure you, on the CodingBat exercise I'm using the proper formatting.",technical_help,cold
+"hello I am a beginner — so I want to start learning code and I am lost in what language I should learn?",learning_advice,cold
+"C Program is compiling online but not on Visual studio — Hi i am new to programming. So i got this code from a book. #include <stdio.h> int main() { int i, n; int marks[n]; int sum = 0; printf(""Enter number of students: ""); scanf(""%d"", &n); for (i = 0; i < n; i++) { printf(""Enter marks of student%d: "", i + 1); scanf(""%d"", &marks[i]); //saving the marks in array sum += marks[i]; } printf(""Sum of marks = %d"", sum); return 0; } It is getting compiled online but not on VS code or VS. i have MingW and everything and a lot of other codes are getting compiled but not this one, please help",technical_help,cold
+"What Language Should I Learn Next? — I have learned Lua(I forgot everything though), and I'm now decent at programming in C#. I really want to learn C, then C++, but I also want to learn Python because I think it might be important. I like to do Game Development, and some other fun things. Yeah, I'm stuck between wanting to learn C, or Python, but what first?",learning_advice,cold
+"I’m struggling and Don’t know what to do — i‘ve learned what I need to know about HTML CSS and JavaScript and my first project was to make a simple sign in page with flex box but the problem is that I’ve scrapped the code more than 5 times because the moment it comes to using CSS it goes wrong, nothing goes where I want it to go and things don‘t work even though they should be. Im not understanding where or why it keeps going wrong and when I see other people do it it just works, but when I try, things just either won’t move or just go in the wrong place and for whatever reason things like flex row and all the other stuff doesn’t work, sorry for the rant but I’m getting sick of trying it over and over and it not working. tldr: I’m having trouble using CSS and things won’t work.",technical_help,cold
+"Complete Beginner to Programming: How do I find the right way to learn, and where do I start? — So yeah, I started out buying a Python 3 Book for beginners at first, I read half and book and just didn't knew what to do with all the stuff i learned, I had no feeling that I actually learned something new and useful, didn't know how to use it all and just quitted reading the book. After that i started a Python 3 beginner youtube tutorial but it didnt help me that much too, I got told to write stuff, but in the end i didn't knew what all this does. I'm not even 1% into programming and its already pretty frustrating for me, it makes me really feel dumb because I find no beginning how to succesfully learn something and use the stuff I learned. So guys, do you have any tips ? Is it hopeless ? I'd really love to learn programming but I really just cant find a beginning. Dont even must be Python 3 but give me anything I can begin with, to understand it.",learning_advice,cold
+"Searched answer for this question far and wide. Didn't find the answer. Python — This example code: while 1: if keyboard.is_pressed('ctrl+alt'): print('to') But when I press alt+ctrl it prints to. Tried using: while 1: if keyboard.is_pressed('ctrl+alt') and not keyboard.is_pressed('alt+ctrl') : print('to') But doesn't work the print statement gets executed even when I press alt+ctrl. The reason I want it be this way because I want to assign function to each combination so ""ctrl+alt"" Have one func assigned to it and ""alt + ctrl"" Have another seperate func assigned to it and I don't want to mix it up. I want it to print to only when I press ctrl+alt and not alt+ctrl or any other key. How to do this. More specifically I want it to recognise it only when I hold down ctrl then press alt while still holding down ctrl. I am using python and sockets and I am making a remote keyboard where the server presses a key and in the client pc it automatically presses. So I want the exact combination because keyboard shortcuts(ctrl+c, ctrl+shift+esc, alt+f4, ctrl+shift+f10, windows+alt+d)only work when pressed in the right order that's why I need it in the exact order Operating System: windows 7 Python Version: 3.8.8 Keyboard: Logitech k200 IDE: pycharm community edition Module: keyboard module latest version Module Link: URL Pip Version: Latest",technical_help,cold
+"I can't seem to wrap my head around object-oriented programming, advice? — I'm trying to learn the basics of Java and object-oriented programming in the fastest time possible but I can't seem to get my brain to understand that approach of programming compared to procedural programming. any advice or good tutorials you guys know that could help?",learning_advice,cold
+"How do I actually learn programming ? (NOT a programming language) — I get programming languages. I know python. I know a bit of C++. My question is how do I learn programming ? Not in a syntaxic way, but in the way of how I'm supposed to arrange my code, what I should be doing/can do, and basically every single aspect of programming that isn't just ""learn a language and use it"". I can make small programs/scripts that work. What I can't make is a project. I also don't know a lot about CS in general, so any ressources/help on that is appreciated. I know my question is very vague, but I myself don't even know what I'm asking for exactly. I just don't really know how to go about making something more complicated than a 40 line script, or how to optimize it.",learning_advice,cold
+"Why does Java feel so much stricter than Python? — I started with Python and recently tried Java. Java feels way more verbose and unforgiving. Is this just because I’m new to it, or is Java meant to be harder at the beginning?",learning_advice,cold
+"Can't able to learn ?? — Guys, how do you learn a language? 1)Do you first completely learn the language and then make a project out of it? 2)Or do you learn the basics and start making a project right away? If you choose the second approach, what do you do if you encounter concepts you don’t know, which hinder the project? You’d probably search for it and learn it, right? But what if you miss some concepts that your project requires? What do you do then? For example, how do you figure out which library, module, or service is best to use when you only know the basics of the language? Let’s suppose the language is JavaScript/URL.",learning_advice,cold
+"Code Review — Hello r/learnprogramming ! I recently started learning about the PyGame framework and I made this project. I would really appreciate some honest code reviews/feedback because I want to learn how to improve and write better code. In the comments feel free to point out my mistakes or criticize my code! Thanks!",technical_help,cold
+"What are topics self taught programmers tend to skip over that prevents them from becoming great programmers? — I'm self taught, and I'm really glad I learned a lower level language (C) before jumping to python and Javascript. I would have taken so much for granted if it weren't the case. I'm curious to hear your answers",learning_advice,cold
+"Python problems — I'm having a beginner's problem: I'd like it so that when text is entered into the terminal, if the text contains a number, it performs a calculation, but if it's a digit, it displays a predefined message(e.g., enter a number) Instead of displaying this error text and crashing the program",technical_help,pre-labelled
+"Where should I start? — People say the best way to learn is by building projects. But when i try to build a project, i dont even know where to start. I just stare at the blank screen. Also how can I build something when I dont even know when and how to start ? This may trigger some people with the idea of ""learn the basics, learn thr concepts etc etc "" I have learnt it. But I really dont know how I can implement it.",learning_advice,pre-labelled
+"What did I do wrong? — I’m seriously considering of going to a coding bootcamp next year and just started learning python on the sololearn app. I’m currently stuck on a practice test just because it didn’t exactly teach me how to implementing the input(). —To those learning on that app, be aware of spoiler/solution for the following!— I’ve tried everything. So how do I supposed to ask the user for input, storage it in the name variable, and display it on the screen? It provided two input examples “Tom” “Bob” With expected outputs being Tom and Bob, obviously. I wrote like this: #Ask the user for input and store it in a variable name = input() name2 = input() #Display the user input on the screen print(name) print(name2) I keep getting an EOF error. Help! 😅 I even tried name = input(“Enter your name:”) Snake cases too Edit: These both input() and both print() are supposed to be in new string but Reddit arranged it wrongly. Also these large bold sentences were supposed to be statements lol",technical_help,pre-labelled
+"Yo beginners, what project actually taught you something real? — I’m sick of hello world tutorials. What’s a good first project that made you feel like you actually learned to code? Nothing too fancy, just enough to get you comfy with the basics. Drop ideas or links, let’s get better together.",learning_advice,pre-labelled
+"What does display flex do — I dont get what exactly does display flex does",technical_help,pre-labelled
+"What should i lern next — im currently a begginer and learning python but when im confortable with it what should i learn next? im asking this so early because when im confortable with python i don't want to just hang on a spot and not move forward im really interested in learning c++ or javascript but maybe i should learn R or rust? im interested in app/game development i always wanted to make a game that i thought is cool but i never knew how to programm. so please give some suggestions.",learning_advice,pre-labelled
+"How do pointers work and why do they have so many usages? — Is the asterisk sign * both used for getting the value of the variable it points to and for creating a pointer? And when typing int *a = &b; for instance, a now holds the memory address of b. How does it then also know its value when saying int c = *a; ? And why do you use them in the first place? In high level languages you just type int b = 5; int a = b; int c = a; why is it more complicated in c++?",technical_help,pre-labelled
+"Feeling lost student want to start real projects and i need advice. — Hi everyone, I’m a second-year data engineering student, and academically, I do well I’m actually the top student in my class. But honestly, I don’t feel like I’m actually learning or becoming skilled. I can get good grades on exams, but I struggle to code, I don’t do real projects, and I feel lost when it comes to applying my knowledge in practice on my own. I really want to start doing projects maybe small data projects, AI stuff, or data visualization but I don’t know where to begin. Every time I try, I get overwhelmed and give up. I’d love advice on: Where to start for beginner-friendly projects Platforms where I can collaborate with others to learn and build things Tips for gaining real-world coding skills beyond exams I’d also love to collaborate with people who are open to working on small projects together so I can learn, practice, and grow. I really want to change this and become a programmer who can build things independently, not just ace tests.",learning_advice,pre-labelled
+"Why are pointers even used in C++? — I’m trying to learn about pointers but I really don’t get why they’d ever need to be used. I know that pointers can get the memory address of something with &, and also the data at the memory address with dereferencing, but I don’t see why anyone would need to do this? Why not just call on the variable normally? At most the only use case that comes to mind for this to me is to check if there’s extra memory being used for something (or how much is being used) but outside of that I don’t see why anyone would ever use this. It feels unnecessarily complicated and confusing.",technical_help,pre-labelled
+"Coding Projects — So i know the way to get better at coding is by doing loads and loads of coding projects, but what i get very confused with is like the code along videos? are they useful? bc i dont wanna copy i wanna learn and be independent so i try to do my own research but sometimes i genuinly dont kno how to start or what to do, an example would be a tic tac toe game ( yes ik its basic ) idk how to start and ive never done a project like that and theres so many code along videos on it and idk if i should watch them or not bc i dont wanna copy i wanna learn and still try doing it myself, any advice? sorry if im overthinking",learning_advice,pre-labelled
+"When do you use a pointer? — Hello, for some background I have taken a very beginner level coding course for my major and passed it, but I dont really feel like I’ve learned anything or know why anything works. In a course this year we had a review problem where the solution required a pointer and I really dont understand why you have to point to the address of the variable instead of just using the variable itself. I’ve watch a few tutorials explaining it but I really dont see how it’s different from just using the variable itself",technical_help,pre-labelled
+"I don't know what to learn — I've been learning programming in python for a while and I really enjoy it, but now I feel like I'm making no progress. I want to be a web developer and I'm not sure what should I learn. Could you recommend me some courses about backend development in python?",learning_advice,pre-labelled
+"Please help me to understand Recursion — Is there anyone available to explain what recursion is and how it works in a simple way, please?What it 's unclear to me is where the logic underneath the recursion function is. For example below I don't see the countDown logic. Thank you! function countDown(num){ if(num < 0){ return; } console.log(num); return countDown(num - 1); } countDown(3);",technical_help,pre-labelled
+"Need to learn SQL — Hello folks, I am a working professional with a commerece background. My team lead has assumed that I know SQL and now has asked me to write queries on metabase (RedShift) - which I am assuming requires SQL skills. Could you guys help me from where I can learn SQL and start writing queries as quicky as possible? I have legit 0 knowledge of SQL.",learning_advice,pre-labelled
+"For loops confuse me — for ( int count = 1 ; count < 10; count++). Like why does this stop at 9 ? i mean 9 is less than 10 so why doesn't it add one more since 9 fits the condition i really don't understand this",technical_help,pre-labelled
+"CSS tips for beginners — Do you have any tips for someone just starting to learn CSS??",learning_advice,pre-labelled
+"[Java] Can someone nullpointerexception to me in layman's terms? — Here is a code block from one of my CS professor's slides: String[] words = new String[5]; System.out.println(""word is: "" + words[0]); words[0] = words[0].toUpperCase(); When I run it I will inevitably get: Exception in thread ""main"" java.lang.NullPointerException at Example.main(Example.java:8) Why is this? What I understand so far is that basically, null is a variable that exists but does not hold a value. He also includes a visual representation of what is happening and I think I sort of understand what is happening but I was wondering if someone could tell me specifically what I am telling the compiler to do and why it throws an error upon compiling? In other words, what am I telling a computer to do here and why does it respond by telling me it can't do that?",technical_help,pre-labelled
+"Are my merge commands unnecessary? — Let's say I have a branch ""example"" that originated from master. I leave the branch for one day, waiting for merge request to be accepted. I then do: git checkout example git pull origin master git push origin example git checkout master git merge origin/example -m ""merged"" git push origin master I'm trying to get used to git and I want to understand what the process is about. This way looks right to me, but I don't know if it's true. Please if you can explain your logic to Amy suggestions/corrections.",technical_help,pre-labelled
+"What is NullPointerException in Java and when does it happens? — I was learning Kotlin for Android dev and there was an article on Why to use Kotlin instead of Java for android. Their was a point that Kotlin is safe from NullPointerException. When does that type of exception appear in Java? I'm a Python programmer and have a little background in C too but idk Java so its liitle bit tricky for me.",technical_help,pre-labelled
+"[Git] How to combine main into my branch? — I'm not sure about the exact process to do this. The process I have so far: 1. be working in my branch 1. make changes 1. git add. 1. git commit -m ""made some changes"" 1. git push Meanwhile there's also been changes in main that I need to pull, so I do: 1. git checkout main 1. git pull Now how do I pull those main changes into my branch? Is it just git checkout my-branch git pull origin main?",technical_help,pre-labelled
+"What are Pointers in C++? What are they even used for exactly? — Just as the title says. What are pointers? I haven't understood the purpose of pointers ? I mean can't we just code without them?
+I have searched about them throughout the internet yet I haven't understood the concept.
+You guys can put links that helped you understood the concept.",technical_help,pre-labelled
+"Just started learning C++ and came across this thing called pointers. — So what are pointers? I don't really understand why it's useful and how it's useful.",technical_help,pre-labelled
+"Confused about Pointers C++ — I'm a newbie programmer trying to learn C++ and I can't seem to figure out what's the deal with pointers. I know they're variables used to tell the program the address of another variable in system memory. But honestly that explanation just leaves more questions. For one are pointers always necessary and most of it just isn't controlled by the programmer in higher level languages like C++ and Java? if pointers aren't always necessary, why are they ever used? And if they are, then wouldn't the pointers themselves need pointers so the program knows the pointers location in memory, requiring an infinite series of pointers? This obviously isn't the case. So could someone try to explain what the hell is up with pointers?",technical_help,pre-labelled
+"[C++] Just learned how to use pointers. But why use pointers in the first place? What's the point?
+
+What's the practical usage for pointers in the first place? It seems I can write any kind of program just fine without having to resort to pointers.
+
+So what if a pointer variable can store the address of something? Why would I practically need that?",technical_help,pre-labelled
+"[JavaScript / JS] Why is ""let"" better than ""var"" apart from the fact it is newer?",technical_help,pre-labelled
+"Help, learning javascript — I was watching a tutorial on learning JavaScript, and I have arrived at a doubt, when to use let and var, for example
+
+let fullName = 'xyz' ; or
+
+var fullName = 'xyz' ;
+
+Which one should I use when and why ?",technical_help,pre-labelled
+"Help with CSS/HTML — https://imgur.com/CpWCShc
+
+In the following CSS file, when I load up this HTML file, why isn't "" margin-top: 10px"" from the top class overridden by the ""margin-top: 20px"" of the bottom class?
+
+Thanks!",technical_help,pre-labelled
+"How do I learn recursion?? — Hello people! I wouldn't consider myself a beginner at coding... I can manage some topics, but when it comes to recursion, I struggle. It is just not possible for me to even visualize it in the first place. I try start with a very simple base case, and then try to extend logic, but nope, i somehow always fail... how do i solve recursion? Because of this, even DP also i cant manage!",technical_help,pre-labelled
+"Recursion - how the hell do I do that😭😭 — I have been coding in cpp since 2 months and am comfortable with basic/medium array , string problems, linked list and hashing.... But I have not been able to proceed bcoz of recursion
+
+How to even start understanding what happens in recursion 😭😭",technical_help,pre-labelled
+"Question about ArrayList and LinkedList — Hello, I'm an AP CS student and I have recently been studying about LinkedList, so besides the dynamic size, does it have any practical benefits or application or any reason why should I choose it instead of ArrayList",technical_help,pre-labelled
+"Should I learn Python First? — I'll try to make it short. I began to wonder whether or not should I learn python before trying to learn Java or should I go directly to learning Java. I am a total newbie... nah not even a newbie, even before that. Recommendations and advice will be greatly appreciated.
+
+Edit: thanks, I'm gonna just right into Java as several have recommended. Also it seems I have forgot to write my motivation, it's learning to mod minecraft, cause if other people don't do it right I will just do it myself.",learning_advice,pre-labelled
+"Should I learn Java or stick to Python? — I have been studying programming for the last six months. For the first four months I studied Python, and then I started studying studying data structures and algorithms. For data structures and algorithms, I picked the books where the code was written in Python. Now that I am about to finish that, I have decided to pick Algorithms by Robert Sedgewick. In this book all the code is written in Java.
+
+I want to learn both Java and Python, and I will learn Java at some point. My question is whether I should start learning it right now or not? I know it's not necessary, but I think it will be much easier to follow the book if I have some understanding of Java.
+
+Why am I confused?
+
+Well, I have watched videos, read blogs about people recommending to stick to one language when starting out. So, I am scared to start a new language thinking I might forget Python or get into a situation where I don't understand either of these languages.",learning_advice,pre-labelled
+"Suggestion: should I learn python or java? — Hi! I'm a junior DevOps engineer and I would like to start developing backend too. I already know intermediate python and worked a little bit with django and I would like to dive deep into python and learn it well.
+
+I asked my supervisor for his advice and he thinks that it's better for me to learn Java first. From his point of view Java is more technical and I can become a better developer by learning the fundamentals with it (like polymorphism, interfaces, data types). He considers python as an uneffective shortcut to learn bad software development practices.
+
+At first he convinced me with his argument but then I documented myself better and I saw that even python has all of those concepts, so I feel like if I'm not lazy and l study python well I can achieve the same expertise I would get with Java.
+
+Since I want python to be my main language I'm essentially very skeptical in using my energies in learning java from zero while I could dive deep in python and get solid with it. It's not like I only want to know python overall, but reading a book of 1600 pages like ""learning python"" takes time and effort and I feel like I want to make that effort on python, not java.
+
+What do you think about it? I could really use your advice, thanks a lot in advance.",learning_advice,pre-labelled
+"Beginner - Python vs Java — I am currently trying to learn coding from scratch in the few months that I have before I do computer science as a course in my high school. This course focuses more on Java. I have been recommended by peers to focus on learning Java and then Python, due to Java teaching more syntax and how if I start with python I may struggle to deal with Java's heavier use of it. Is this true? Additionally, would it be possible for me to learn Java and Python within this time frame? I will probably have around two-three hours to work on it every single day.
+
+Lastly, should I learn a different language rather than python?",learning_advice,pre-labelled
+"Java or Python? — Sup guys, I'm from Brazil and I'm learning English in 2025. I have background in computer science, but I also wanna learn programming, but I'm doubt where to start. Should I learn Java or Python? and please, tell me why I sould learn it. Could you please tell me the difference between them? Sorry for my bad english",learning_advice,pre-labelled
+"Java or python ?? what to choose for a suitable career in backend as a fresher — hello guys, i am fresher and really confused",learning_advice,pre-labelled
+"How to learn SQL for complete beginner? And how to get entey level job after learning it? — Please advise me some ways to learn SQL",learning_advice,pre-labelled
+"What language should i start pursuing after finishing the basics on python? Django or java? — I've learned python slowly for about 2 years",learning_advice,pre-labelled
+"What programming language should i learn? Java or Python? I have 6+ Years of experience. — Hi Guys, I have been going through lots of threads",learning_advice,pre-labelled
+"I want to learn SQL, but I don't know where/how to start — Hi everyone, I decided to learn SQL, the problem is... I don't know how it works. I need to learn more about databases in general, so where do I start? What tools do I need to learn and practice SQL? How does this whole process work?",learning_advice,pre-labelled
+"Why does it show me « undefined »? — I wrote this code.(Javascript) And it shows me « testing » and « undefined ».",technical_help,pre-labelled
+"[Segmentation fault in C] Why am I getting segmentation fault here ? — I was trying to get familiar in functions returning a pointer, so I wrote this code.",technical_help,pre-labelled
+"Segmentation fault in C++ program - no idea why — Hello everyone!! I'm learning C++ through learncpp.com",technical_help,pre-labelled
+"How is it possible for a C program to segmentation fault? — Just got done with an OS course and I want to start writing some low level personal projects.",technical_help,pre-labelled
+"How would you explain left-join and right-join to a 5 year old? — I have worked with SQL in the past and wrote really really long queries",technical_help,pre-labelled
+"can someone explain this regex please — why their is a backslash before the queston mark but not before the exlamation mark?",technical_help,pre-labelled
+"Dictionary Comprehension — For the one below where dictionary comprehension is used I am confused",technical_help,pre-labelled
+"Can someone explain to me why my binary search solution is not working ? — This is a Leetcode problem called Search in Rotated Array.",technical_help,pre-labelled
+"List Comprehension Question — So I think I have a pretty good understanding of List Comprehension in python but there are still parts that kinda elude me",technical_help,pre-labelled
+"How to understand regex — Hi i want to learn how to use regex because it's so powerful and useful",technical_help,pre-labelled
+"Self-taught programmers who actually made it, how'd you do it? — I’m trying to break into programming, with a non-cs background",learning_advice,pre-labelled
+"How do guys go about creating projects? — What does the process look like from choosing the actual thing you're going to work on",learning_advice,pre-labelled
+"How to succeed as a self taught programmer? — Hello fellow programmers, I was curious how do self taught people do get really well in coding",learning_advice,pre-labelled
+"Learn by creating projects — A big thing I hear in the tech world especially within the best of the best",learning_advice,pre-labelled
+"i understand how to program, but not how to build anything. — id like to make a game, but even though i understand all the basic programming concepts",learning_advice,pre-labelled
+"Learn programming through projects — I've heard a lot that you can learn easier through projects, but most of the time i don't even know where to start",learning_advice,pre-labelled
+"RegEx. — I thought I understood programming well until I saw how COMPLICATED regex looks.",learning_advice,pre-labelled
+"RegEx wizards, how did you learn RegEx and how did you get it to stick? — I’m so bad at remembering RegEx",learning_advice,pre-labelled
+"How long does it take to learn programming to the level of getting your first job? — If you are self-taught, how much time should be invested",learning_advice,pre-labelled
+"How long did it take you to learn to code? — Hi all, I’m wondering how long it took you to learn to code",learning_advice,pre-labelled
+"Explain promises in javascript to me like I’m a 5 year old. — Having a hard time understanding how promises work with then, catch and finally.",technical_help,pre-labelled
+"How can I learn about Promises, Async, Await...etc in JavaScript? — I learned JavaScript last year but I didnt use it often and now I have to work with it.",technical_help,pre-labelled
+"How can I solve git conflicts? — I sometimes forget to pull before work, then I create a conflict.",technical_help,pre-labelled
+"Understanding Recursion — I am taking an introductory computer course online and I am having a hell of time understanding Recursion",technical_help,pre-labelled
+"Question about recursion — When you write a recursive function do you know what happens at each recursive step?",technical_help,pre-labelled
+"Questions about Git branches and merging conflicts. — Hello, I'm still a noob (mostly learning web dev on my own for about 3 years)",technical_help,pre-labelled
+"Recursion is very frustrating — Can someone help me how to process recursion in terms of like figuring out how to solve a question",technical_help,pre-labelled
+"Best way to learn resolving git conflicts? — Hi all. I’ve been using git for quite some time, but never got to level beyond simple push and pull.",technical_help,pre-labelled
+"Help With Understanding About Java Handling HashMaps — Hello, I have been programming in Java for a while and have recently started to make my own console media like game",technical_help,pre-labelled
+"Would you mind explaining/showing an example of recursion? — I'm trying to understand recursive code.",technical_help,pre-labelled
+"In tutorial hell please help — I can't seem to be able to build any project from scratch anymore, I run out of ideas quickly",learning_advice,pre-labelled
+"How to get out of tutorial hell. — I've been learning to program for more than a year now, but it seems like I can't create anything on my own.",learning_advice,pre-labelled
+"What is tutorial hell? — As newbie learning to code I have watched videos about the mistakes people make while learning to code.",learning_advice,pre-labelled
+"How do you guys deal with tutorial hell? — Hello everyone, it's been 6 months since I graduated from uni and things have not been well thanks to the job market.",learning_advice,pre-labelled
+"Career change / learn programming — I'm currently working as an electrician but I would like to make a career change into programming.",learning_advice,pre-labelled
+"Tutorial hell — So im only about 3 weeks into learning python and im already finding myself stuck in this 'tutorial hell'.",learning_advice,pre-labelled
+"Tutorial Hell — I know the answer would be to make my own project, but I feel like I don’t know enough.",learning_advice,pre-labelled
+"stuck in tutorial hell and never know how to start — Hello r/learnprogramming! Now, I am not really a beginner.",learning_advice,pre-labelled
+"Stuck in the tutorial hell — I've been learning to program for more than a year now, but it seems like I can't create anything on my own.",learning_advice,pre-labelled
+"Career Change Advice to Programming — Been looking for some insight from people in tech. I currently work in finance 35(m) and want to career change to programming.",learning_advice,pre-labelled
+"Python basics",technical_help,pre-labelled
+"IndexError: list index out of range",technical_help,pre-labelled
+"How would you traverse a binary tree and keep record of the individual ""paths"" through it?",technical_help,pre-labelled
+"free() function in C",technical_help,pre-labelled
+"malloc (C)",technical_help,pre-labelled
+"Is this a correct explanation for malloc in C?",technical_help,pre-labelled
+"Need help creating C's ""malloc()"" function from scratch",technical_help,pre-labelled
+"Question about dictionaries in python",technical_help,pre-labelled
+"Java Hashmap",technical_help,pre-labelled
+"Can someone help please explain hashmaps and hashsets in java to me",technical_help,pre-labelled
+"DSA for beginner",learning_advice,pre-labelled
+"Help me start my dsa journey",learning_advice,pre-labelled
+"Any practical Backend web development roadmap?",learning_advice,pre-labelled
+"Need help with creating a roadmap",learning_advice,pre-labelled
+"Roadmap guide",learning_advice,pre-labelled
+"Programming portfolio?",learning_advice,pre-labelled
+"How should I begin my journey as a backend developer, and what key skills should I focus on learning?",learning_advice,pre-labelled
+"How do I build a portfolio?",learning_advice,pre-labelled
+"Backend Roadmap",learning_advice,pre-labelled
+"Projects for Portfolio",learning_advice,pre-labelled
+"ELI5 - Async Await",technical_help,pre-labelled
+"Fetching apis with react.",technical_help,pre-labelled
+"Help fetching an API",technical_help,pre-labelled
+"What does the ""static"" keyword mean in java and why is the main method required to have it?",technical_help,pre-labelled
+"Static Variables, Fields, And Methods In Java",technical_help,pre-labelled
+"JAVA | when do you use stuff like private, public, static etc?",technical_help,pre-labelled
+"I needed help in javascript",technical_help,pre-labelled
+"Resolving Java stack overflow",technical_help,pre-labelled
+"What exactly does static do in Java?",technical_help,pre-labelled
+"Why is using static in Java programs considered bad practice? Sometimes I have a group of functions that I just want to use anywhere and having an object just feels like an extra step, and I don't understand why that's bad.",technical_help,pre-labelled
+"How do I start contributing to Open Source?",learning_advice,pre-labelled
+"How to contribute to open sources?",learning_advice,pre-labelled
+"How do I actually start contributing to open source as a beginner?",learning_advice,pre-labelled
+"How do I make my first contribution to Open Source?",learning_advice,pre-labelled
+"Is now to late?",learning_advice,pre-labelled
+"Too many languages taught in my uni, what should i focus on?",learning_advice,pre-labelled
+"APIs are making me realise how little i actually understand JS",learning_advice,pre-labelled
+"Been learning CSS grid for a week now and still finding it hard to use",learning_advice,pre-labelled
+"How to learn fetch, await and async",learning_advice,pre-labelled
+"I dont get how you learn to use API's!!!",learning_advice,pre-labelled
+"JSON help Getting a Parse Error I don't understand",technical_help,pre-labelled
+"CSS Help - First Time Programmer",technical_help,pre-labelled
+"(Python 3) Need some help figuring out .json() error message",technical_help,pre-labelled
+"Java / NullPointerException Problem",technical_help,pre-labelled
+"Python coding project help",technical_help,pre-labelled
+"Help with parsing stream",technical_help,pre-labelled
+"Why is Margin Collapse a thing?",technical_help,pre-labelled
+"CSS Margin Question",technical_help,pre-labelled
+"I started to learn C program. Coul you tell me why this program is not working",technical_help,pre-labelled
+"Working with an API in JavaScript",technical_help,pre-labelled
+"Learning DSA",learning_advice,pre-labelled
+"where do I learn DSA from?(python)",learning_advice,pre-labelled
+"How do I Really learn programming?",learning_advice,pre-labelled
+"Has anyone here ever had a internship without being in school?",learning_advice,pre-labelled
+"Getting Started With Git",learning_advice,pre-labelled
+"Best resources to learn Git as a complete beginner?",learning_advice,pre-labelled
+"How to learn git?",learning_advice,pre-labelled
+"Beginner Git & GitHub tutorial recommendations?",learning_advice,pre-labelled
+"How do you ACTUALLY study programming? Share your experiences.",learning_advice,pre-labelled
+"How do you guys stay consistent to study/learn something?",learning_advice,pre-labelled
+"Java: Is Arraylist better than Arrays?",technical_help,pre-labelled
+"Using ArrayList vs List in Java",technical_help,pre-labelled
+"Need help understanding Java ArrayLists",technical_help,pre-labelled
+"What is the difference between array and ArrayList? Java",technical_help,pre-labelled
+"Css file not linking with html",technical_help,pre-labelled
+"Why does floating point imprecision happen?",technical_help,pre-labelled
+"What are floating point numbers?",technical_help,pre-labelled
+"Floating point",technical_help,pre-labelled
+"How do I use float? (Advance?)",technical_help,pre-labelled
+"working with git",technical_help,pre-labelled
+"How Do I ""Create projects""",learning_advice,pre-labelled
+"How to actually learn programming?",learning_advice,pre-labelled
+"How do you start from scratch?",learning_advice,pre-labelled
+"Portfolio ideas",learning_advice,pre-labelled
+"How do you actually understand programming?",learning_advice,pre-labelled
+"How do experienced developers actually learn and debug in real jobs?",learning_advice,pre-labelled
+"should I take a year or two of self learning before doing a online or in-person bootcamp?",learning_advice,pre-labelled
+"Go to school or self teach?",learning_advice,pre-labelled
+"Are coding bootcamps worth it or are there other ways?",learning_advice,pre-labelled
+"Using GitHub as a Beginner.",learning_advice,pre-labelled
+"Question on generics (perhaps Java specifically)",technical_help,pre-labelled
+"What is the point of generics?",technical_help,pre-labelled
+"Question about Generics term to use",technical_help,pre-labelled
+"Help with Generics",technical_help,pre-labelled
+"(Java) Generic Types (<E>,<T>..)",technical_help,pre-labelled
+"Confusion on GROUP BY statement and its use",technical_help,pre-labelled
+"Cant wrap my mind around this segmentation fault error",technical_help,pre-labelled
+"Help with IBM Flask app KeyError",technical_help,pre-labelled
+"C++ Help me understand how I fixed this",technical_help,pre-labelled
+"Unexpected error message",technical_help,pre-labelled
+"Learning to test",learning_advice,pre-labelled
+"Help how to apply for internships",learning_advice,pre-labelled
+"Recommended things to learn for test-scripting?",learning_advice,pre-labelled
+"internships interviews",learning_advice,pre-labelled
+"How exactly do you “study” programming?",learning_advice,pre-labelled
+"Seeking advice in learning programming (and related things) for work",learning_advice,pre-labelled
+"How do programmer actually learn and utilized their knowledge to solve problems?",learning_advice,pre-labelled
+"Am I ready for an Internship?",learning_advice,pre-labelled
+"What are the most effective ways to debug code as a beginner programmer?",learning_advice,pre-labelled
+"Is git confusing or is it just me?",learning_advice,pre-labelled
